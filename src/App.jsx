@@ -22,13 +22,13 @@ function App() {
                   }}
                 >
                   <li>
-                    <Link to={"/signup"}>Registration Form</Link>
+                    <Link to={"/registration"}>Registration Form</Link>
                   </li>
                 </ul>
               </>
             }
           />
-          <Route path="/signup" element={<RegistrationForm />} />
+          <Route path="/registration" element={<RegistrationForm />} />
         </Routes>
       </Router>
     </>
