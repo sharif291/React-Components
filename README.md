@@ -13,9 +13,9 @@ npm run dev
 
 # Why it is unique
 
-* Registration form (/components/registrationForm/RegistrationForm.jsx) and the form hook(/common/hooks/Form.js) is design as a component. you just need to copy the files and paste it in your project folder to use it.
+* Registration form (/src/components/registrationForm/RegistrationForm.jsx) and the form hook(/src/common/hooks/Form.js) is designed as a component. you just need to copy the files and paste it in your project folder to use it.
 
-* CSS is written in (/components/registrationForm/registrationForm.css) file.CSS is written in fully custom. no package is used.
+* CSS is written in (/src/components/registrationForm/registrationForm.css) file.CSS is written in fully custom. no package is used.
 
 * In this project vite is used rather than create-react-app. That will help develop and build faster.
 
