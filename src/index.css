@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.title {
+  font-size: 36px;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 584px) {
+  .title {
+    font-size: 18px;
+  }
+}

@@ -1,6 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import RegistrationForm from "./components/registrationForm/RegistrationForm";
 
@@ -9,7 +8,29 @@ function App() {
 
   return (
     <>
-      <RegistrationForm />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <h1 className="title">React Components</h1>
+                <ul
+                  style={{
+                    marginLeft: "20px",
+                    textAlign: "left",
+                  }}
+                >
+                  <li>
+                    <Link to={"/signup"}>Registration Form</Link>
+                  </li>
+                </ul>
+              </>
+            }
+          />
+          <Route path="/signup" element={<RegistrationForm />} />
+        </Routes>
+      </Router>
     </>
   );
 }
